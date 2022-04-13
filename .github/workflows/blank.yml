@@ -5,10 +5,10 @@ on: workflow_dispatch
 jobs:
   build:
 
-runs-on: windows-latest
+    runs-on: windows-latest
     timeout-minutes: 9999
 
-steps:
+    steps:
     - name: Download Ngrok
       run: Invoke-WebRequest https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-windows-amd64.zip -OutFile ngrok.zip
     - name: Extract Ngrok Archive
@@ -31,9 +31,8 @@ steps:
       run: Invoke-WebRequest https://raw.githubusercontent.com/duitawa/NewRDP/main/loop.ps1 -OutFile loop.ps1
     - name: Keep Alive
       run: ./loop.ps1
-© 2022 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
+
+
+
+
+
